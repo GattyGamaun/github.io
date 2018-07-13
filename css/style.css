@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Lato";
+    src: url('../assets/fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: "YesevaOne";
+    src: url('../assets/fonts/yeseva-one/YesevaOne-Regular_v2.otf'); 
+}
+
+@font-face {
+    font-family: "Open sans";
+    src: url('../assets/fonts/open-sans/OpenSans-Light.ttf'); 
+}
+
+body {
+    -webkit-user-drag: none;
+    user-select: none;
+    padding: 0;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1, button {
+    text-transform: uppercase;
+    margin: 10px auto;
+    font-family: "YesevaOne";
+
+}
+
+h2 {
+    text-align: center;
+    margin: 5px auto;
+    font-family: "Open sans";
+    font-size: 40px;
+    position: relative;
+    top: 0px;
+    left: 323px;
+    color: rgb(88, 88, 88);
+}
+
+p {
+    margin: 20px auto;
+    font-family: "Lato";
+
+}
+
+.wrapper {
+    width: 700px;
+    height: 740px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background: #dcdcdc;
+    position: relative;
+}
+
+.rules div{
+    margin: 0px auto;
+    width: 400px;
+    top: 40px;
+    position: relative;
+    color: rgb(88, 88, 88);
+}
+
+.rules > button{
+    position: relative;
+    top: 33px;
+    left: 250px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #c90000;
+    color: white;
+    cursor: pointer;
+    transition: background ease-in .5s;
+} 
+
+.rules > button:hover{
+    background: #860000;
+}
+
+article {
+   position: relative;
+   top: 40px;
+   width: 300px;
+   margin: 0 auto;
+}
+
+div > button {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: yellowgreen;
+    color: white;
+    cursor: pointer;
+    transition: background ease-in .5s;
+}
+
+div > button:hover {
+    background: rgb(92, 131, 13);
+}
+
+.cardbacks > img{
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+form {
+    margin: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
+.fild, .wish{
+    position: absolute;
+    top: 0px;
+    visibility: hidden;   
+}
+
+.wish > img {
+    position: relative;
+    top: 134px;
+    left: 272px;
+    font-size: 40px;
+}
+
+table {
+    position: absolute;
+    top: 158px;
+    left: 118px;
+    font-family: 'Lato';
+    font-size: 21px;
+}
+
+td {
+    position: relative;
+    left: 40px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Match-Match Game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="rules" id="rules">
+            <div>
+                <h1> Memory Game</h1>
+                <p>&#9786; WELCOME THE GUEST &#9786;</p>
+            </div>
+            <div>
+                <form name="player">
+                    <label for="name">First name</label>
+                    <input type="text" name="name" id="name" value="" required placeholder="your name..">
+
+                    <label for="surname">Last name</label>
+                    <input type="text" name="surname" id="surname" value="" required placeholder="your last name..">
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" value="" required placeholder="your email..">
+                </form>
+            </div>
+            <div>
+                <button id="easy">Easy</button>
+                <button id="medium">Medium</button>
+                <button id="hard">Hard</button>
+            </div>
+            <div class="cardbacks">
+                <img src="assets/img/cardback-1.jpg" alt="cardback-1" id="back-1"></img>
+                <img src="assets/img/cardback-2.jpg" alt="cardback-2" id="back-2"></img>
+                <img src="assets/img/cardback-3.jpg" alt="cardback-3" id="back-3"></img>
+                <img src="assets/img/cardback-4.jpg" alt="cardback-4" id="back-4"></img>
+            </div>
+            <article>
+                <p>Your task is finding two identical cards. If it has found it disappears. The game finishes when you match
+                    all cards.</p>
+                <p>&#10029;&#10029; GOOD LUCK &#10029;&#10029;</p>
+            </article>
+            <button id="startGame" onClick="validForm()">Start game</button>
+        </section>
+
+        <section class="fild" id="fild">
+            <h2 id="timer"></h2>
+        </section>
+
+        <div class="wish" id="wish">
+            <img src="assets/img/winner.png" alt="YOU HAVE WON!">
+            <table>
+                    <tr> <!-- Row 1 -->
+                      <th></th>
+                      <th>Top score</th>
+
+                    </tr>
+                    <tr> <!-- Row 2 -->
+                      <th>1</th>
+                      <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 3 -->
+                        <th>2</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 4 -->
+                        <th>3</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 5 -->
+                        <th>4</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 6 -->
+                        <th>5</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 7 -->
+                        <th>6</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 8 -->
+                        <th>7</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 9 -->
+                        <th>8</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 10 -->
+                        <th>9</th>
+                        <td>0</td>
+                    </tr>
+                    <tr> <!-- Row 11 -->
+                        <th>10</th>
+                        <td>0</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/rules.js"></script>
+    <script src="js/layer.js"></script>
+</body>
+
+</html>
